@@ -3,13 +3,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link href="css/one_page_website.css" rel="stylesheet">
     <title></title>
 </head>
 <body>
-    <!--Nav BAR-->
-    <nav>
+    <!--NAVBAR-->
+    <nav class="nav-bar">
         <ul>
-            <a href="#Homepage">
+            <a href="#Intro">
                 <li>"Super Arcade Bros."</li></a>
             <a href="#OLDvsNEW">
                 <li>Arcade "Stack Up"</li></a>
@@ -19,52 +20,83 @@
                 <li>"Contra"ct Us!</li></a>
         </ul>
     </nav>
-    <!--HOME PAGE-->
+    <header>
+        <h4>Super Arcade Bros.</h4>
+    </header>
+    <!--INTRODUCTION-->
     <section>
-        <h3>"Super Arcade Bros."</h3>
-        <div id="Homepage">
+        <div id="Intro">
+            <h3>"Press Submit to Play Again!"</h3>
+            <div class="head_img">
             <img src="images/pinball.jfif" alt="pinball machine" />
+            </div>
             <p>Welcome to "Super Arcade Bros.", where there isnt a console we can't make like brand new.<br />
             We have years of experiance and a great reputation for quality and lasting products.<br />
             We also make custom machines. We send you visual progress reports so that you can see the work we are doing.<br />
             Look at some of our work, and give us a call.<br />
             Why wait to get the machine of your dreams, when you can have it now!</p>
-        </div>
+         </div>
     </section>
     <!--PICTURES-->
     <section>
         <h3>Arcade "Stack Up"</h3>
         <div id="OLDvsNEW">
-            <img src="images/oldpacman.jfif" alt="old pacman console" /> <img src="images/newpacman.jfif" alt="renovated pac man console" />
-            <img src="images/oldtetris.jfif" alt="old tetris console" /> <img src="images/newtetris.jfif" alt="renovated tetris console" /><br />
-            <img src="images/oldspaceinvaders.jfif" alt="old space invaders console" /> <img src="images/newspaceinvaders.jfif" alt="new space invaders console" />
-            <img src="images/oldxmen.jfif" alt="old xmen console" /> <img src="images/newxmen.jfif" alt="renovated xmen console" />
+            <div class="column">
+                <h2>Ghosts of Pacman</h2>  
+                    <img src="images/oldpacman.jfif" alt="an old pacman console" />        
+            </div>
+            <div class="column">
+                <h2>PacMan Refurb</h2>
+                    <img src="images/newpacman.jfif" alt="a renovated pac man console" />
+            </div>
+            <div class="column">
+                <h2>Blocked Out Tetris</h2>
+                    <img src="images/oldtetris.jfif" alt="an old tetris console" />
+            </div>
+            <div class="column">
+                <h2>Tetris Refurb</h2>
+                    <img src="images/newtetris.jfif" alt="a renovated tetris console" />
+            </div>
+            <div class="column">
+                <h2>No Space For Players!</h2>
+                    <img src="images/oldspaceinvaders.jfif" alt="an old space invaders console" />
+            </div>
+            <div class="column">
+                <h2>Space Invaders Refurb</h2>
+                    <img src="images/newspaceinvaders.jfif" alt="a renovated space invaders console" />
+            </div>
+            <div class="column">
+                <h2>X'ed Out</h2>
+                    <img src="images/oldxmen.jfif" alt="an old xmen console" />
+            </div>
+            <div class="column">
+                <h2>X-Men Refurb</h2>
+                    <img src="images/newxmen.jfif" alt="a renovated xmen console" />
+            </div>
         </div>
     </section>
     <!--VIDEOS-->
     <section>
         <h3>Console "Wrecking Crew"</h3>
         <article>
-            <div id="BuildingConsole">
-                <iframe width="604" height="331" src="https://www.youtube.com/embed/EQ1uYsyQ-uA" title="Restoring Classic Arcade Games in Mini Cabinets!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div style="display: flex; justify-content: center"; id="BuildingConsole">
+                <iframe width="604" height="331" src="https://www.youtube.com/embed/EQ1uYsyQ-uA" title="Restoring Classic Arcade Games in Mini Cabinets!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" alt="video of console renovators refurbishing a console" allowfullscreen></iframe>
             </div>
         </article>
     </section>
     <!--CONTACT FORM-->
     <section>
-        <div>
-            <h3>"Contra"ct Us!</h3>
-                <div id="Requests">
-                    <form>
-                        <input type="text" placeholder="Your First Name" />
-                        <input type="text" placeholder="Your Last Name" /><br>
-                        <input type="email" placeholder="Valid Email" /><br>
-                        <input type="tel" placeholder="Phone Number to reach you" /><br>
-                        <textarea placeholder="Type your question(s) or request(s) here..."></textarea><br>
-                        <input type="submit" value="Submit" />
-                    </form>
-                </div>
-        </div>
+        <h3>"Contra"ct Us!</h3>
+            <div id="Requests">
+                <form>
+                    <input type="text" placeholder="Your First Name" />
+                    <input type="text" placeholder="Your Last Name" /><br>
+                    <input type="email" placeholder="Valid Email" />
+                    <input type="tel" placeholder="Phone Number" /><br>
+                    <textarea placeholder="Type your question(s) or request(s) here..."></textarea><br>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
     </section>
     <!--FOOTER-->
     <footer>
