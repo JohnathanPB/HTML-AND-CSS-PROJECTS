@@ -1,0 +1,126 @@
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 50%;
+    filter: invert( 75%) drop-shadow(9px 9px 9px gray);
+    border-radius: 5px;
+}
+
+section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-text{
+    text-align: center;
+    font-weight: bold;
+    color: brown;
+}
+
+.table-style{
+    border: 5px solid red;
+    padding: 7px;
+}
+
+.th{
+    background-color: blue;
+    color: white;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: blue;
+    font-size: 60px;
+}
+
+.top-left{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: red;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.navbar a:hover{
+    background: black;
+    color: white;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    height: 75px;
+}
+
+.column p {
+    color: blue;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p:hover{
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: red;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
